@@ -189,7 +189,7 @@ def calculo_ab(func, valor=0, modo='sympy'):
         ab = sci.optimize.fsolve(f, valor)
         
     elif modo == 'sympy':
-        f = sym.sympify(func)
+        #f = sym.sympify(func)
         eqn = sym.Eq(sym.sympify(func), valor)
         ab = sym.solve(eqn)
     else:
