@@ -14,6 +14,9 @@ from functools import partial
 from math import exp, atan
 import sys
 
+################## D E F I N E S ##################
+eps = sys.float_info.epsilon
+
 #init_printing()
 
 ################ G R A P H I C S ################
