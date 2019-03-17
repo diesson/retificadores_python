@@ -7,7 +7,7 @@ Baseado no livro Eletrônica de Potência, de Daniel W. Hart (figura abaixo), fo
 </p>
 
 
-Para executar os scripts é necessário ter o software jupyter notebook, ou pode ser executado pelo browser as duas soluçes são disponibilizadas em [jupyter.org](https://jupyter.org/), ou [Google Colab](https://colab.research.google.com/notebooks/welcome.ipynb) também como uma solução web browser.
+Para executar os scripts é necessário ter o software jupyter notebook, ou pode ser executado pelo browser. As duas soluções são disponibilizadas em [jupyter.org](https://jupyter.org/), ou [Google Colab](https://colab.research.google.com/notebooks/welcome.ipynb) também como uma solução web browser.
 
 <p align="center">
   <img width="800" height="200" src="https://s3.amazonaws.com/com.twilio.prod.twilio-docs/images/jupyter_python_numpy.width-808.png">
