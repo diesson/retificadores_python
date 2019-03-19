@@ -145,12 +145,12 @@ def plot_info(fv, fi, xlim):
     textoI = 'Corrente (A)'
     
     
-    m = calc_mult(Ipk, Vpk, 0.2)
+    m = calc_mult(Ipk, Vpk, 0.1)
     if m > 1:
         fi = str(m) + '*(' + fi + ')'
         textoI = 'Corrente x'+ str(m) +'(A)'
         
-    n = calc_mult(Vpk, Ipk, 0.2)
+    n = calc_mult(Vpk, Ipk, 0.1)
     if n > 1:
         fv = str(n) + '*(' + fv + ')'
         textoV = 'Tensão x'+ str(n) +'(V)'
