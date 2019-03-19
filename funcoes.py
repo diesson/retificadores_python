@@ -145,7 +145,7 @@ def plot_info(fv, fi, xlim):
     textoI = 'Corrente (A)'
     
     
-    m = calc_mult(Ipk, Vpk, 0.2)
+    m = calc_mult(Ipk, Vpk, 0.1)
     if m > 1:
         fi = str(m) + '*(' + fi + ')'
         textoI = 'Corrente x'+ str(m) +'(A)'
@@ -211,7 +211,7 @@ def calculo_harmonicas(f, T=2*np.pi, n_harmonicas = 15, n_pontos = 1000):
     v_fft[0] = v_fft[0]/2 
     harmonicas = v_fft[range(0,int((v_fft.size/2)+1), 1)]
     
-    return harmonicas[range(0,n_harmonicas, 1)]
+    return harmonicas[range(0,n_harmonicas+1, 1)]
 
 def calculo_thd(f, T=2*np.pi, n_harmonicas = 500, n_pontos = 1000): 
     
