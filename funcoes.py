@@ -11,7 +11,7 @@ import sympy.utilities as symu
 import numpy as np
 from numpy import sqrt, sin, cos, pi
 from functools import partial
-from math import exp, atan
+from math import exp, atan, asin
 import sys
 
 ################## D E F I N E S ##################
