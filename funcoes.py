@@ -229,3 +229,6 @@ def calculo_thd(f, T=2*np.pi, n_harmonicas = 500, n_pontos = 1000):
     THD = sqrt(somatorio)/harmonicas[1]
     
     return THD
+
+def degrau(a, b, c1 = 1, c2 = -1):
+    return f'( {c1}*heaviside(x - {a}, 0) + {c2}*heaviside(x - {b}, 0) + {eps} )'
