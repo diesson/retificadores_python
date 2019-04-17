@@ -182,6 +182,10 @@ def calculo_pk(func, ti=0, tf=2*pi):
     x = np.linspace(ti, tf, 500)
     return max(f(x))
 
+def rampa_RC(V_pk, teta, wRC, defasagem=0):
+    
+    return f'{V_pk}*sin({teta})*exp(-(x+{defasagem}-{teta})/({wRC}))'
+
 def calculo_ab(func, valor=0, modo='sympy'):
     
     if modo == 'scipy':
