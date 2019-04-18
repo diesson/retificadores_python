@@ -103,8 +103,9 @@ def plot_fft(f, ax, T=2*np.pi, n_harmonicas = 15, n_pontos = 1000):
 
     plt.title('Resposta em frequência')
     plt.xlabel('Harmônicas')
-
-    ax.axis([0, n_harmonicas, 0, 10 + int(10 * round(float(np.amax(harmonicas))/10))])
+    
+    #Arrumar esse trecho
+    ax.axis([0, n_harmonicas, 0, 0.5 + int(12 * round(float(np.amax(harmonicas))/10))])
 
     ax.axhline(0, color='black', lw=2)
     ax.axvline(0, color='black', lw=2)
