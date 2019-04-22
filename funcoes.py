@@ -189,7 +189,9 @@ def rampa_RC(V_pk, teta, wRC, defasagem=0):
 
 def calculo_ab(func, valor=0, modo='sympy'):
     
-    if modo == 'scipy':
+    ab = np.zeros(2)
+    
+    if modo == 'numpy':
         f = sym.lambdify('x', func, 'numpy')
         ab = sci.optimize.fsolve(f, valor)
         
@@ -236,4 +238,8 @@ def calculo_thd(f, T=2*np.pi, n_harmonicas = 500, n_pontos = 1000):
     return THD
 
 def degrau(a, b, c1 = 1, c2 = -1):
+    
+    if a == 0:
+        return f'( {c1} + {c2}*heaviside(x - {b}, 0) + {eps} )'
+    
     return f'( {c1}*heaviside(x - {a}, 0) + {c2}*heaviside(x - {b}, 0) + {eps} )'
