@@ -243,3 +243,9 @@ def degrau(a, b, c1 = 1, c2 = -1):
         return f'( {c1} + {c2}*heaviside(x - {b}, 0) + {eps} )'
     
     return f'( {c1}*heaviside(x - {a}, 0) + {c2}*heaviside(x - {b}, 0) + {eps} )'
+
+def graus(valor):
+    return valor*(180/pi)
+
+def radianos(valor):
+    return valor*(pi/180)
